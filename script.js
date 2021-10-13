@@ -26,7 +26,8 @@ function fetchCases(type) {
 	xhttp.onreadystatechange = function() {
 		getData(this);
 	}
-	xhttp.open("GET", "http://localhost/CRO-map/getJSON.php?state", true);
+	//xhttp.open("GET", "http://localhost/CRO-map/getJSON.php?state", true);
+	xhttp.open("GET", "https://liladic.github.io/CRO-map.github.io/getJSON.php?state", true);
 	// xhttp.open("GET", "https://lidijaladic.000webhostapp.com/projects/CRO-map/getJSON.php?state", true);
 	xhttp.send();
 
@@ -191,7 +192,8 @@ var xhttpTotals = new XMLHttpRequest();
 xhttpTotals.onreadystatechange = function() {
 	getTotalData(this);
 }
-xhttpTotals.open("GET", "http://localhost/CRO-map/getTotals.php?total", true);
+//xhttpTotals.open("GET", "http://localhost/CRO-map/getTotals.php?total", true);
+xhttpTotals.open("GET", "https://github.com/liladic/CRO-map.github.io/getTotals.php?total", true);
 // xhttpTotals.open("GET", "https://lidijaladic.000webhostapp.com/projects/CRO-map/getTotals.php?total", true);
 xhttpTotals.send();
 
