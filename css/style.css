@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	max-width: 1024px;
+	min-height: 100vh;
+	margin: 0 auto;
+	/*min-height: 100vh;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/*background-color: #efefef;*/
+	/*position: relative;*/
+	/*background-color: deepskyblue;*/
+/*	background-color: #87CEEB;
+*/
+}
+
+h4 {
+	font-weight: 300;
+}
+
+button {
+	display: block;
+	width: 80%;
+	padding: 10px;
+	margin-top: 10px;
+	font-size: 12px;
+	font-weight: 300;
+	color: #fff;
+	background-color: #16697a;
+	border-style: none;
+	border-radius: 2px;
+}
+
+button:hover {
+	background-color: #055869;
+}
+
+.left-section {
+	width: 30%;
+	padding: 20px;
+	/*background-color: #ffcccc;*/
+}
+
+.mapdiv {
+	width: 70%;
+	padding: 20px;
+	/*background-color: #ccffcc;*/
+	/*height: 100vh;*/
+	/*margin: 10px;*/
+	/*position: absolute;*/
+	/*margin: auto;*/
+}
+
+.mapdiv path {
+	fill: #c6c6c4;
+	/*fill: #888;*/
+	stroke: #e8e8e8;
+	stroke-width: 1px;
+	transition: fill 0.3s;
+}
+
+.mapdiv path:hover {
+	fill: #e8e8e8;
+}
+
+circle {
+	/*stroke: #88cc02;*/
+	stroke-width: 1;
+	fill: #e97171;
+	r: 25px;
+}
+
+text {
+	fill: #fff;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .left-section, .mapdiv {
+    width: 100%;
+  }
+}
