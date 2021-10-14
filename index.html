@@ -9,16 +9,24 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+	<header>
+		<h1>Koronavirus u Hrvatskoj</h1>
+	</header>
 	<div class="left-section">
+		<h2>Ukupni podaci</h2>
 		<div id="datumObjave"></div>
-		<div id="SlucajeviHrvatska">Slučajevi svijet: </div>
-		<div id="SlucajeviSvijet">Slučajevi Hrvatska: </div>
+		<div id="SlucajeviSvijet">Slučajevi svijet: </div>
+		<div id="SlucajeviHrvatska">Slučajevi Hrvatska: </div>
+		<div id="CijepljeniJednomDozom">Cijepljeni s jednom dozom: </div>
+		<div id="CijepljeniDvijeDoze">Cijepljeni s dvije doze: </div>
+		<div id="CijepljeniUProtekla24">Cijepljeni u protekla 24 sata: </div>
+
 		<br>
-		<h4>Podaci po županijama</h4>
-		<button id="activeCases" onclick="fetchCases('broj_aktivni')">Aktivni slučajevi</button>
-		<button id="deathCases" onclick="fetchCases('broj_umrlih')">Umrli</button>
-		<button id="deathPercentage" onclick="fetchCases(null)">Postotak umrlih</button>
-		<button id="totalCases" onclick="fetchCases('broj_zarazenih')">Ukupno zaraženih</button>
+		<h2>Podaci po županijama:</h2>
+		<button id="activeCases" class="btn active" onclick="fetchCases('broj_aktivni')">Aktivni slučajevi</button>
+		<button id="deathCases" class="btn" onclick="fetchCases('broj_umrlih')">Umrli</button>
+		<button id="deathPercentage" class="btn" onclick="fetchCases(null)">Postotak umrlih</button>
+		<button id="totalCases" class="btn" onclick="fetchCases('broj_zarazenih')">Ukupno zaraženih</button>
 	</div>
 	<div class="mapdiv">
 		<!--  svg map attribution: http://simplemaps.com -->
@@ -136,11 +144,11 @@
 <!-- 		<circle cx="240.3" cy="371.7" id="0" />
 			<circle cx="313.3" cy="308" id="1" />
 			<circle cx="649.3" cy="859" id="2" /> -->
-			<circle name="Dubrovacko-Neretvanska" cx="700" cy="860" />
+			<circle name="Dubrovačko-neretvanska" cx="700" cy="860" />
 			<text id="Dubrovačko-neretvanska" x="700" y="860" text-anchor="middle" dy="0.35em"></text>
-			<circle name="Splitsko-Dalmatinska"cx="535" cy="700" />
+			<circle name="Splitsko-dalmatinska"cx="535" cy="700" />
 			<text id="Splitsko-dalmatinska" x="535" y="700" text-anchor="middle" dy="0.35em"></text>
-			<circle name="Šibensko-Kninska"cx="435" cy="656" />
+			<circle name="Šibensko-kninska"cx="435" cy="656" />
 			<text id="Šibensko-kninska" x="435" y="656" text-anchor="middle" dy="0.35em"></text>
 			<circle name="Zadarska"cx="395" cy="556" />
 			<text id="Zadarska" x="395" y="556" text-anchor="middle" dy="0.35em"></text>
@@ -154,16 +162,16 @@
 			<text id="Karlovačka" x="325" y="310" text-anchor="middle" dy="0.35em"></text>
 			<circle name="Sisačko-moslavačka" cx="490" cy="280" />
 			<text id="Sisačko-moslavačka" x="490" y="280" text-anchor="middle" dy="0.35em"></text>
-			<circle name="Zagrebačka " cx="490" cy="160" />
-			<text id="Zagrebačka " x="490" y="160" text-anchor="middle" dy="0.35em"></text>
+			<circle name="Zagrebačka" cx="490" cy="160" />
+			<text id="Zagrebačka" x="490" y="160" text-anchor="middle" dy="0.35em"></text>
 			<circle name="Grad Zagreb" cx="420" cy="175" />
 			<text id="Grad Zagreb" x="420" y="175" text-anchor="middle" dy="0.35em"></text>
 			<circle name="Krapinsko-zagorska županija" cx="410" cy="113" />
-			<text id="Krapinsko-zagorska županija" x="410" y="113" text-anchor="middle" dy="0.35em"></text>
+			<text id="Krapinsko-zagorska" x="410" y="113" text-anchor="middle" dy="0.35em"></text>
 			<circle name="Varaždinska" cx="480" cy="75" />
 			<text id="Varaždinska" x="480" y="75" text-anchor="middle" dy="0.35em"></text>
-			<circle name="Međimurska" cx="500" cy="25" />
-			<text id="Međimurska" x="500" y="25" text-anchor="middle" dy="0.35em"></text>
+			<circle name="Međimurska" cx="520" cy="28" />
+			<text id="Međimurska" x="520" y="28" text-anchor="middle" dy="0.35em"></text>
 			<circle name="Koprivničko-križevačka" cx="570" cy="90" />
 			<text id="Koprivničko-križevačka" x="570" y="90" text-anchor="middle" dy="0.35em"></text>
 			<circle name="Virovitičko-podravska" cx="700" cy="200" />

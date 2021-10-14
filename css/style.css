@@ -22,7 +22,18 @@ body {
 */
 }
 
-h4 {
+header {
+	width: 100%;
+	margin: 25px 0 0 0;
+}
+
+h1 {
+	font-size: 32px;
+	font-weight: 600;
+	color: #16697a;
+}
+
+h2 {
 	font-weight: 300;
 }
 
@@ -37,10 +48,11 @@ button {
 	background-color: #16697a;
 	border-style: none;
 	border-radius: 2px;
+	cursor: pointer;
 }
 
-button:hover {
-	background-color: #055869;
+.btn:hover, .active {
+	background-color: #e97171;
 }
 
 .left-section {
@@ -75,7 +87,7 @@ circle {
 	/*stroke: #88cc02;*/
 	stroke-width: 1;
 	fill: #e97171;
-	r: 25px;
+	r: 28px;
 }
 
 text {
